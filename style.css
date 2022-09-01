@@ -1,0 +1,344 @@
+
+#bodycompleto{
+    background-image: url("./images/BG\ 01.jpg");
+   font-family: "Basquerville", "arial";
+   font-style: bold;
+   overflow: scroll;
+   margin-bottom: 3px;
+
+
+}
+.elementosCabecera {
+   /* background-color: black; */
+    display: flex;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.divlogo img{ 
+ width: 120px;
+ height: 85px;
+ margin-left: 480px;
+ 
+}
+
+#barraNav {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around, flex-start;
+}
+
+#barraNav li a{
+    color: blanchedalmond;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+    text-align: left;
+    padding: 8px 7px 8px 7px;
+    border: none;
+    
+}
+
+#barraNav li a:hover{
+    color: blanchedalmond;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+    text-align: left;
+    padding: 8px 7px 8px 7px;
+    border: 1px solid #ccc;
+}
+
+#barraNav li{
+    font-style: normal;
+    list-style-type: none;
+    list-style-position: outside;
+    font-size: 20px;
+    text-align: left;
+    align-content: space-around;
+    padding: 8px 7px 8px 7px;
+    display:inline;
+
+}
+
+.fotoPrincipal{
+display: flex;
+justify-content: space-around;
+margin-top: 5px;
+height: 435px;
+}
+
+.fotoPrincipal img{
+width: 1280px;
+height: 445px;
+
+}
+
+.tituloImagenPrincipal {
+    font-family: "Basquerville", "arial";
+   font-style: bold;
+   font-size: 50px;
+   color: blanchedalmond;
+   position: absolute;
+}
+ 
+.design {
+    margin-inline: 300px;
+}   
+
+
+.footerElementos {
+   /* background-color:black; */
+  border-radius: 5px;
+  margin-right: 5px;
+  color: blanchedalmond;
+  display: flex;
+ 
+  }
+
+.redesicons {
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+list-style: none;
+}
+
+.redesicons a img {
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    border-radius: 15px;
+    list-style: none;
+}
+
+.contactoGral p{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    text-align:justify;
+    padding: 10px 10px 10px 10px;
+    margin-left: 850px;   
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    list-style: none;
+}
+
+.gallery img{
+    width: 590px;
+    height: 300px; 
+}
+
+.gallery a{
+    text-decoration: none;
+} 
+
+.gallery a:hover{
+    text-decoration: none;
+    filter: brightness(0.9);
+    cursor: pointer; 
+} 
+
+@media screen and (max-width: 480px) {
+
+
+
+
+}
+    
+
+
+.servicesBody {
+    color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.textoServices{
+    font-family: "Basquerville", "arial";
+    font-style: bold;
+    font-size: 70px;
+    color: blanchedalmond;
+    display: flex;
+    justify-items: flex-start;
+    padding: 5px 5px 5px 5px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+
+}
+
+.ServicesBody iframe {
+    display: flex;
+    justify-items: center;
+    margin-left: 35px;
+
+}
+
+/* usando Grid*/
+
+.aboutMe {
+margin: 3px 3px 3px 0px;
+padding-top: 15px;
+display: grid;
+grid-template-columns: 2fr 4fr;
+grid-template-rows: 1fr 4fr;
+grid-template-areas: 
+"h1 img"
+"p img"
+} 
+
+
+.aboutStory {
+    font-family: "Basquerville", "arial";
+    font-style: bold;
+    font-size: 60px;
+    color: blanchedalmond;
+    grid-area: h1;
+    display: flex;
+    justify-content: center; 
+    padding-bottom: 0px;
+    height: 0vh;
+
+}
+
+h1#aboutStory {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.aboutparrafo {
+    font-family: "Basquerville", "arial";
+    font-style: bold;
+    font-size: 40px;
+    color: blanchedalmond;
+    grid-area: p;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 5px;
+    margin-left: 15px;
+}
+
+
+.aboutMe img {
+    margin-right:0px;
+   width: 800px;
+   height: 560px;
+    grid-area: img;
+ 
+}
+
+.contactTitulo {
+    font-family: "Basquerville", "arial";
+    font-style: bold;
+    font-size: 70px;
+    color: blanchedalmond;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 40px;
+}
+
+.ContactForm {
+    font-family: "Basquerville", "arial";
+    font-style: bold;
+    font-size: 20px;
+    color: blanchedalmond;
+    margin-left: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-areas: 
+    "formularioIzq formularioDerecho";
+}
+
+input#nombre {
+    width: 500px;
+    height: 25px;
+    padding-bottom: 5px;
+}
+
+input#email{
+    width: 500px;
+    height: 25px;
+    padding-bottom: 5px;
+}
+
+input#telefono{
+    width: 500px;
+    height: 25px;
+    padding-bottom: 5px;
+}
+
+input#website {
+    width: 500px;
+    height: 25px;
+    padding-bottom: 5px;
+
+}
+
+
+div#formularioIzq {
+    grid-area: formularioIzq;
+    padding-bottom: 10px;
+
+}
+
+div#formularioDerecho {
+    grid-area: formularioDerecho;
+    display: flex;
+    padding-bottom: 10px;
+
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
+}
+
+.SubmitEnviar {
+    border: none;
+}
+
+.SubmitEnviar input {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+   margin-left: 340px;
+   
+}
+
+@media screen and (max-width: 480px) {
+
+#bodycompleto { 
+   
+
+
+
+
+ 
+
+    
+}   
+
+
+
+
+        
+
+
+}
+   
+
+
+
+
+
+
