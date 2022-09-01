@@ -190,50 +190,74 @@ list-style: none;
 margin: 3px 3px 3px 0px;
 padding-top: 15px;
 display: grid;
-grid-template-columns: 2fr 4fr;
-grid-template-rows: 1fr 4fr;
+grid-template-columns: 1fr 2fr;
+grid-template-rows: 1fr;
 grid-template-areas: 
-"h1 img"
-"p img"
+"asideIzq asideDer"
+
 } 
 
+ .asideIzq {
+    grid-area: asideIzq;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
 
-.aboutStory {
+.aboutStory{
     font-family: "Basquerville", "arial";
     font-style: bold;
-    font-size: 60px;
+    font-size: 50px;
     color: blanchedalmond;
-    grid-area: h1;
-    display: flex;
-    justify-content: center; 
-    padding-bottom: 0px;
-    height: 0vh;
 
 }
 
-h1#aboutStory {
-    display: flex;
-    justify-content: flex-start;
-}
 
 .aboutparrafo {
     font-family: "Basquerville", "arial";
     font-style: bold;
-    font-size: 40px;
+    font-size: 35px;
     color: blanchedalmond;
-    grid-area: p;
-    display: flex;
-    justify-content: flex-start;
-    padding-right: 5px;
-    margin-left: 15px;
 }
 
+.asideDer {
+    display: grid;
+    grid-area: asideDer;
+    grid-template-columns: repeat(2, 1rf);
+    grid-template-areas: 
+    " img img";
+}
+
+.bancoImg:nth-of-type(1){
+    grid-column: 1/2;
+    grid-row: 1/2;
+    grid-area: img;
+
+}
+
+.bancoImg:nth-of-type(2){
+    grid-column: 2/3;
+    grid-row: 1/2;
+    grid-area: img;
+}
+
+.bancoImg:nth-of-type(3){
+    grid-column: 1/2;
+    grid-row: 2/3;
+    grid-area: img;
+}
+
+.bancoImg:nth-of-type(4){
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-area: img;
+}
 
 .aboutMe img {
     margin-right:0px;
-   width: 800px;
-   height: 560px;
-    grid-area: img;
+   width: 360px;
+   height: 203px;
  
 }
 
