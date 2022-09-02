@@ -6,10 +6,8 @@
    overflow: scroll;
    margin-bottom: 3px;
 
-
 }
 .elementosCabecera {
-   /* background-color: black; */
     display: flex;
     border-radius: 5px;
     margin-right: 5px;
@@ -93,7 +91,6 @@ height: 445px;
 
 
 .footerElementos {
-   /* background-color:black; */
   border-radius: 5px;
   margin-right: 5px;
   color: blanchedalmond;
@@ -146,15 +143,7 @@ list-style: none;
     filter: brightness(0.9);
     cursor: pointer; 
 } 
-
-@media screen and (max-width: 480px) {
-
-
-
-
-}
     
-
 
 .servicesBody {
     color: blanchedalmond;
@@ -196,6 +185,83 @@ grid-template-areas:
 "asideIzq asideDer"
 
 } 
+
+/* inicio  mobile */
+
+@media screen and (max-width: 768px) {
+
+    #bodycompleto{ 
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas: 
+"header"
+"main"
+"footer"
+
+    }
+
+    
+
+    .aboutMe {
+        width: 300px;
+        height: 900px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "asideIzq"
+        "asideDer"
+    }
+    .asideIzq {
+        grid-area: asideIzq;
+        width: 300px;
+        height: 300;
+        display: flex;
+        flex-direction: column;
+        align-content: center;    
+}
+.aboutStory {
+    width: 300px;
+    height: 75px;
+}
+.aboutStory h1 {
+    font-size: 15px;
+}
+
+.aboutparrafo {
+    width: 300px;
+    height: 200px;  
+}
+
+.aboutparrafo p {
+    font-size: 20px; 
+
+}
+
+.asideDer {
+    width: 300px;
+    display: grid;
+    grid-area: asideDer;
+    grid-template-columns: 1rf;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    " img"
+    " img"
+    " img"
+    " img"
+}
+
+.aboutMe img {
+    margin-right:0px;
+   width: 210px;
+   height: 100px;
+
+}
+}
+
+/* fin mobile */
 
  .asideIzq {
     grid-area: asideIzq;
