@@ -1,12 +1,22 @@
 
+
 #bodycompleto{
     background-image: url("./images/BG\ 01.jpg");
    font-family: "Basquerville", "arial";
    font-style: bold;
    overflow: scroll;
-   margin-bottom: 3px;
-
+display: grid;
+grid-template-areas: 
+"header header header"
+"main main main"
+"footer footer footer";
 }
+
+header {
+    grid-area: header;
+}
+
+
 .elementosCabecera {
     display: flex;
     border-radius: 5px;
@@ -64,6 +74,12 @@
 
 }
 
+main { 
+    grid-area: main;
+margin:auto;
+max-width: 1235px;
+padding-left: 0px;}
+
 .fotoPrincipal{
 display: flex;
 justify-content: space-around;
@@ -89,16 +105,26 @@ height: 445px;
     margin-inline: 300px;
 }   
 
+footer {
+width: 1225;
+height: 100px;
+font-size: 25px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-areas: 
+"redesicons contactoGral"
+
+}
 
 .footerElementos {
-  border-radius: 5px;
-  margin-right: 5px;
   color: blanchedalmond;
   display: flex;
- 
+  flex-direction: row;
+ justify-content: space-between;
   }
 
 .redesicons {
+grid-area: footer;
 display: flex;
 flex-wrap: nowrap;
 flex-direction: row;
@@ -113,14 +139,19 @@ list-style: none;
     list-style: none;
 }
 
-.contactoGral p{
+.contactoGral {
+    grid-area: footer;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end; 
-    text-align:justify;
-    padding: 10px 10px 10px 10px;
-    margin-left: 850px;   
+    align-items: flex-end;
+    padding-left: 10px;
 }
+
+.contactoGral p {
+    font-family: "Basquerville", "arial";
+    color:  blanchedalmond;
+    font-size: 25px;
+
+}    
 
 .gallery {
     display: flex;
@@ -188,14 +219,12 @@ grid-template-areas:
 
 /* inicio  mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 
     #bodycompleto{ 
-
         width: 320px;
         height: 480px;
         display: grid;
-        grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 1fr;
         grid-template-areas: 
 "header"
@@ -204,9 +233,11 @@ grid-template-areas:
 
     }
 
-    .backgroundMobileOnly {
+    #backgroundMobileOnly {
         background-image: url("./images/averie-woodard-5d20kdvFCfA-unsplash.jpg");
-        height: 100vh;
+   background-size: cover;
+   z-index: 2;
+
     }
 
   .elementosCabecera {
@@ -258,14 +289,12 @@ grid-template-areas:
 main {
 grid-area: main;
  width: 300px;
- height: 600px;
-
+ height: 470px;
 }
+
 .fotoPrincipal img{
-    width: 300px;
-    height: 600px;
+    width: 100%;
 }
-
     .tituloImagenPrincipal {
        font-size: 15px;
        position: absolute;
@@ -278,30 +307,47 @@ grid-area: main;
 
     /* footer mobile*/
 
-    .footerElementos {
+    footer {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
         width: 320px;
+        height: 100px;
         grid-template-areas: 
         "redesicons"
         "contactoGral"
         }
 
-      
-      .redesicons {
-      grid-area: redesicons;
-
-      }
-      
-      .contactoGral{
-        grid-area: contactoGral;  
+      .footerElementos{
         display: flex;
         flex-direction: column;
+        justify-content: center,space-around;
+      }
+
+      .redesicons {
+      grid-area: footer;
+display: flex;
+justify-content: center;
+
+      }
+      .redesicons a img {
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+        border-radius: 10px;
+        list-style: none;
+      }
+
+      .contactoGral{
+        grid-area: footer;  
+        display: flex;
         justify-content: center;
       }
       
-
+      .contactoGral p {
+        font-family: "Basquerville", "arial";
+        color:  blanchedalmond;
+        font-size: 15px;
+      }
 
 
     .aboutMe {
