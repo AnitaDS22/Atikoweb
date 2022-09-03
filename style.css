@@ -192,6 +192,8 @@ grid-template-areas:
 
     #bodycompleto{ 
 
+        width: 320px;
+        height: 480px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 1fr;
@@ -200,6 +202,11 @@ grid-template-areas:
 "main"
 "footer"
 
+    }
+
+    .backgroundMobileOnly {
+        background-image: url("./images/averie-woodard-5d20kdvFCfA-unsplash.jpg");
+        height: 100vh;
     }
 
   .elementosCabecera {
@@ -211,11 +218,21 @@ grid-template-areas:
         justify-content: center, space-evenly;
     }
 
+    .divlogo img{ 
+        width: 60px;
+        height: 42px;
+        margin-left: 0px;
+        margin-top: 5px;
+       display: flex;
+        grid-area: header;
+        justify-content: flex-start;
+
+    }
+
     #barraNav {
         padding-top: 5px;
         padding-bottom: 5px;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
 
@@ -235,7 +252,56 @@ grid-template-areas:
         text-align: center;
         padding: 8px 7px 8px 7px;
         background-color:  #ccc;
+        border-radius: 5px;
+        color: black;
     }
+main {
+grid-area: main;
+ width: 300px;
+ height: 600px;
+
+}
+.fotoPrincipal img{
+    width: 300px;
+    height: 600px;
+}
+
+    .tituloImagenPrincipal {
+       font-size: 15px;
+       position: absolute;
+       margin-inline-start: 80px;
+    }
+     
+    .design {
+        margin-inline: 100px;
+    }   
+
+    /* footer mobile*/
+
+    .footerElementos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 320px;
+        grid-template-areas: 
+        "redesicons"
+        "contactoGral"
+        }
+
+      
+      .redesicons {
+      grid-area: redesicons;
+
+      }
+      
+      .contactoGral{
+        grid-area: contactoGral;  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+
 
 
     .aboutMe {
