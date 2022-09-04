@@ -238,9 +238,7 @@ grid-template-areas:
     font-style: bold;
     font-size: 50px;
     color: blanchedalmond;
-
 }
-
 
 .aboutparrafo {
     font-family: "Basquerville", "arial";
@@ -261,21 +259,17 @@ grid-template-areas:
     grid-column: 1/2;
     grid-row: 1/2;
     grid-area: img;
-
 }
-
 .bancoImg:nth-of-type(2){
     grid-column: 2/3;
     grid-row: 1/2;
     grid-area: img;
 }
-
 .bancoImg:nth-of-type(3){
     grid-column: 1/2;
     grid-row: 2/3;
     grid-area: img;
 }
-
 .bancoImg:nth-of-type(4){
     grid-column: 2/3;
     grid-row: 2/3;
@@ -393,28 +387,17 @@ textarea {
         display: flex;
         grid-area: header;
         height: 400px;
-        width: 300px;
-        flex-direction: column;
-        justify-content: center, space-evenly;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
     }
 
     .divlogo img{ 
         width: 60px;
         height: 42px;
+        position:absolute;
         margin-left: 0px;
         margin-top: 5px;
-       display: flex;
-        grid-area: header;
         justify-content: flex-start;
-
-    }
-
-    #barraNav {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
     }
 
@@ -422,23 +405,20 @@ textarea {
    display: flex;
     flex-direction: column;
         text-align: center;
-        padding: 8px 7px 8px 7px;
+        justify-content: center;
         border: none;
     }
 
     #barraNav li a:hover{
-        display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 8px 7px 8px 7px;
         background-color:  #ccc;
         border-radius: 5px;
         color: black;
     }
+
 main {
 grid-area: main;
- width: 320px;
- height: 470px;
 }
 
 .fotoPrincipal img{
@@ -502,46 +482,37 @@ justify-content: center;
 /* page about me mobile */
 
     .aboutMe {
-        width: 320px;
-        height: 420px;
+        height: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
         grid-template-areas: 
         "asideIzq"
         "asideDer"
     }
     .asideIzq {
         grid-area: asideIzq;
-        width: 320px;
+        width: 100%;
         height: 200;
         display: flex;
         flex-direction: column;
         align-content: center;    
 }
 .aboutStory {
-    width: 320px;
-    height: 75px;
-}
-.aboutStory h1 {
-    font-size: 10px;
+    height: 40px;
+    font-size: 30px;
+    display: flex;
+    align-content: flex-start;
 }
 
 .aboutparrafo {
-    width: 300px;
-    height: 200px;  
-}
-
-.aboutparrafo p {
-    font-size: 18px; 
-
+    height: 100px; 
+    font-size: 18px;  
 }
 
 .asideDer {
-    width: 320px;
     display: grid;
     grid-area: asideDer;
-    grid-template-columns: 1rf;
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
     " img"
@@ -549,39 +520,27 @@ justify-content: center;
     " img"
     " img"
 }
-
-.aboutMe img {
-    margin-right:0px;
-   width: 210px;
-   height: 100px;
-
-}
 .bancoImg:nth-of-type(1){
     grid-row: 1/2;
     grid-area: img;
-
 }
-
 .bancoImg:nth-of-type(2){
     grid-row: 2/3;
     grid-area: img;
 }
-
 .bancoImg:nth-of-type(3){
     grid-row: 3/4;
     grid-area: img;
 }
-
 .bancoImg:nth-of-type(4){
     grid-row: 4/5;
     grid-area: img;
-
 }
 
 .aboutMe img {
     margin-right:0px;
-   width: 210px;
-   height: 100px; }
+   width: 300px;
+   height: 150px; }
 }
 /* fin mobile */
 
