@@ -58,11 +58,9 @@ header {
     font-weight: bold;
     display: inline;
     text-align: left;
-  /*padding: 8px 7px 8px 7px;*/
     border: 1px solid #ccc;
     padding: 0.8em;
     font-size: 1.5em;
-
         
 }
 
@@ -147,7 +145,6 @@ flex-wrap: nowrap;
 flex-direction: row;
 list-style: none;
 gap: 1em;
-transform: translateX(10px);
 }
 
 .redesicons a img {
@@ -156,10 +153,17 @@ transform: translateX(10px);
     margin: 3px;
     border-radius: 15px;
     list-style: none;
+    transition: padding 0.5s; size: 1em 0.5s;
 }
 
-.redesicons :hover {
-    transform: translateX(200px);
+.redesicons a img:hover {
+    padding: 0em;
+    width: 70px;
+    height: 70px;
+    display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+
 }
 
 .contactoGral {
