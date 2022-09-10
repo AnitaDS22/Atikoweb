@@ -94,7 +94,7 @@ height: 435px;
 .fotoPrincipal img{
 width: 1280px;
 height: 445px;
-margin-left: 0px;
+margin-left: none;
 
 }
 
@@ -424,10 +424,13 @@ textarea {
         display: flex;
         grid-area: header;
         height: 100%;
-        width: 100%;
+        width: 520px;
         flex-wrap: wrap-reverse;
         justify-content: center;
+        max-width: 520px;
     }
+
+    
 
     .divlogo img{ 
         width: 60px;
@@ -439,6 +442,10 @@ textarea {
         display: flex;
         justify-content: flex-start;
 
+    }
+
+    #barraNav {
+        max-width: 520px;
     }
 
     #barraNav li a{
@@ -498,6 +505,7 @@ width: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center,space-around;
+        max-width: 520px;
       }
 
       .redesicons {
@@ -519,13 +527,14 @@ gap: 1em;
         grid-area: footer;  
         display: flex;
         justify-content: center;
+        max-width: 520px;
+        margin-left: 1em;
       }
       
       .contactoGral p {
         font-family: "Basquerville", "arial";
         color:  blanchedalmond;
-        font-size: 10px;
-        margin-left: 50px;
+        font-size: 15px;
 
       }
 /* page about me mobile */
